@@ -1,6 +1,9 @@
-export function Button(){
-
-    return<>
-
-    </>
+function Button({children, ...props}){
+    return (
+        <button {...props}>
+            {children}
+        </button>
+    );
 }
+
+export default Button;
