@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import TodoRow from './components/TodoRow';
 import './App.css';
+import Button from "./components/Button.jsx";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -29,7 +30,8 @@ function App() {
         ))}
         <form onSubmit={newTodo}>
           <input ref={ref} type="text" placeholder="Input task here" />
-          <button type="submit">Add Task</button>
+
+          <Button size={"large"} type="submit">Add</Button>
         </form>
       </div>
   );

@@ -1,0 +1,37 @@
+.button {
+
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #4DB470;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 10%;
+    height: 40px;
+    opacity: 1; /* Add this to ensure all buttons are visible by default */
+}
+
+.button.small {
+    font-size: 12px;
+    opacity: 0;
+
+}
+
+.button.large {
+    font-size: 20px;
+    opacity: 1;
+    padding: 30px;
+    line-height: 0;
+
+}
+
+.button:hover {
+    background-color: #4DB470;
+
+}
+
+.button.small:hover {
+    opacity: 1;
+}
