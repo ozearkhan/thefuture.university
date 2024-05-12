@@ -24,10 +24,11 @@ function App() {
 
   return (
       <div className="card">
-        <h1>TODO</h1>
+        <h1>Todo</h1>
         {todos.map((todo) => (
             <TodoRow key={todo.id} todo={todo} onTodoTrav={todoTraversal} onTodoRemoval={todoRemove} />
         ))}
+        <hr/>
         <form onSubmit={newTodo}>
           <input ref={ref} type="text" placeholder="Input task here" />
 
